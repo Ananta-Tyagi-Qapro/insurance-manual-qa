@@ -1,0 +1,62 @@
+Project: Insurance Management System
+Module: User Portal
+Created by: Ananta Tyagi
+Date: July 2025
+File Type: Functional Test Cases (.txt)
+
+==================================================
+TEST CASES - USER PORTAL MODULE
+==================================================
+
+1. Test Case ID: TC_UP_001
+   Title: Verify successful login with valid credentials
+   Preconditions: User is registered and has active credentials
+   Test Steps:
+     1. Navigate to the login page
+     2. Enter valid username and password
+     3. Click on the Login button
+   Expected Result: User is successfully redirected to the User Dashboard
+
+--------------------------------------------------
+
+2. Test Case ID: TC_UP_002
+   Title: Verify login fails with invalid credentials
+   Preconditions: User is on the login page
+   Test Steps:
+     1. Enter incorrect username or password
+     2. Click Login
+   Expected Result: Error message is displayed: "Invalid username or password"
+
+--------------------------------------------------
+
+3. Test Case ID: TC_UP_003
+   Title: Verify user can view policy details after login
+   Preconditions: User is logged in and has at least one active policy
+   Test Steps:
+     1. Log in to the portal
+     2. Click on "My Policies"
+   Expected Result: List of active/inactive policies is displayed
+
+--------------------------------------------------
+
+4. Test Case ID: TC_UP_004
+   Title: Verify user can initiate a new claim
+   Preconditions: User is logged in and has an active policy
+   Test Steps:
+     1. Click on “Claims”
+     2. Click on “New Claim”
+     3. Fill in required details and upload documents
+     4. Click Submit
+   Expected Result: Confirmation message is displayed: “Claim initiated successfully”
+
+--------------------------------------------------
+
+5. Test Case ID: TC_UP_005
+   Title: Verify premium payment redirection to payment gateway
+   Preconditions: Policy is due for renewal
+   Test Steps:
+     1. Go to “Premium Payment” section
+     2. Click “Pay Now”
+   Expected Result: User is redirected to the integrated payment gateway page
+
+==================================================
