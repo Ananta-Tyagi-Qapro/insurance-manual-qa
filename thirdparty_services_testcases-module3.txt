@@ -1,0 +1,49 @@
+Third-Party Services – Test Cases (Insurance Management System)
+
+1. Test Case ID: TP_TC_01  
+   Title: Verify integration with payment gateway  
+   Steps:  
+     - Initiate a policy payment as a user  
+     - Redirect to payment gateway  
+     - Complete payment  
+   Expected Result: Payment should succeed and user should be redirected back to confirmation page
+
+2. Test Case ID: TP_TC_02  
+   Title: Handle failed transaction from payment gateway  
+   Steps:  
+     - Initiate a payment  
+     - Cancel or let it fail on payment gateway  
+   Expected Result: Payment should fail and system should log the failure correctly
+
+3. Test Case ID: TP_TC_03  
+   Title: Fetch latest claim status from third-party TPA (Third-Party Administrator)  
+   Steps:  
+     - Admin/user queries a claim  
+     - System fetches status from external API  
+   Expected Result: Claim status should be updated and displayed to the user/admin
+
+4. Test Case ID: TP_TC_04  
+   Title: Validate timeout behavior from external services  
+   Steps:  
+     - Simulate network delay or TPA downtime  
+     - Try to fetch/update data  
+   Expected Result: System should show appropriate error or retry logic
+
+5. Test Case ID: TP_TC_05  
+   Title: Check data synchronization with external insurer DB  
+   Steps:  
+     - Update policy record  
+     - System sends sync request to external database  
+   Expected Result: Sync confirmation should be logged and visible to admin
+
+6. Test Case ID: TP_TC_06  
+   Title: Secure transmission of data via APIs  
+   Steps:  
+     - Intercept requests to/from third-party services  
+   Expected Result: All sensitive data should be encrypted (e.g., via HTTPS or JWT)
+
+7. Test Case ID: TP_TC_07  
+   Title: Handle unexpected error codes from APIs  
+   Steps:  
+     - Send invalid data to API  
+   Expected Result: System should handle the error gracefully and show proper message
