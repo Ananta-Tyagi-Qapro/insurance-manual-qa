@@ -1,0 +1,75 @@
+Bug Reports – Insurance Management System (Manual Testing)
+
+🔹 Project: Insurance Management System  
+🔹 Tester: Ananta Tyagi  
+🔹 Module: User Portal, Admin Panel, Third-party Services  
+🔹 Environment: QA Test Environment  
+🔹 Report Format: Summary | Steps to Reproduce | Expected | Actual | Severity | Status
+
+---
+
+1. Bug ID: BUG-UP-001  
+Module: User Portal  
+Summary: Password field allows less than 6 characters  
+Steps:  
+  - Go to Register  
+  - Enter password as "123"  
+  - Click Submit  
+Expected: Error message for weak password  
+Actual: User registered successfully  
+Severity: High  
+Status: Open
+
+---
+
+2. Bug ID: BUG-AP-002  
+Module: Admin Panel  
+Summary: Admin login throws 500 error intermittently  
+Steps:  
+  - Go to Admin Login  
+  - Enter valid credentials  
+  - Submit  
+Expected: Admin should log in  
+Actual: 500 Internal Server Error appears randomly  
+Severity: Critical  
+Status: Open
+
+---
+
+3. Bug ID: BUG-TP-003  
+Module: Third-party Service  
+Summary: Claim API fails when invalid policy ID is sent  
+Steps:  
+  - Trigger claim API with policy ID = "0000"  
+  - Check response  
+Expected: Proper 404 or error message  
+Actual: API times out without response  
+Severity: Medium  
+Status: Open
+
+---
+
+4. Bug ID: BUG-UP-004  
+Module: User Portal  
+Summary: Policy PDF not downloading in Safari  
+Steps:  
+  - Log in as user  
+  - Navigate to My Policies  
+  - Click “Download” on a policy  
+Expected: PDF should download  
+Actual: Nothing happens in Safari browser  
+Severity: Low  
+Status: Open
+
+---
+
+5. Bug ID: BUG-AP-005  
+Module: Admin Panel  
+Summary: Policy search fails if special character used  
+Steps:  
+  - Go to Manage Policies  
+  - Search for “@Life2025”  
+Expected: Input should sanitize or show no result  
+Actual: Page crashes  
+Severity: High  
+Status: Open
