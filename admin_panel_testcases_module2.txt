@@ -1,0 +1,61 @@
+Admin Panel – Test Cases (Insurance Management System)
+
+1. Test Case ID: AP_TC_01
+   Title: Verify successful admin login
+   Steps:
+     - Go to admin login page
+     - Enter valid admin credentials
+     - Click 'Login'
+   Expected Result: Admin should be redirected to dashboard
+
+2. Test Case ID: AP_TC_02
+   Title: Validate incorrect login credentials
+   Steps:
+     - Enter incorrect username/password
+     - Click 'Login'
+   Expected Result: Error message should be shown
+
+3. Test Case ID: AP_TC_03
+   Title: Check admin dashboard elements
+   Steps:
+     - Log in as admin
+     - Verify presence of charts, statistics, and menu options
+   Expected Result: All key elements should load correctly
+
+4. Test Case ID: AP_TC_04
+   Title: Add new insurance policy
+   Steps:
+     - Login as admin
+     - Navigate to “Policies” → Click “Add New”
+     - Fill details and save
+   Expected Result: Policy should be added and visible in list
+
+5. Test Case ID: AP_TC_05
+   Title: Edit existing insurance policy
+   Steps:
+     - Login as admin
+     - Go to “Policies” list → Click “Edit”
+     - Modify details and update
+   Expected Result: Changes should be saved and visible
+
+6. Test Case ID: AP_TC_06
+   Title: Delete an insurance policy
+   Steps:
+     - Login as admin
+     - Navigate to “Policies”
+     - Select a policy and click “Delete”
+   Expected Result: Policy should be removed from the list
+
+7. Test Case ID: AP_TC_07
+   Title: View registered user list
+   Steps:
+     - Login as admin
+     - Go to “Users” section
+   Expected Result: All registered users should be listed
+
+8. Test Case ID: AP_TC_08
+   Title: Generate and download reports
+   Steps:
+     - Login as admin
+     - Go to “Reports” section → Choose date range → Click “Download”
+   Expected Result: Report should download in PDF or CSV format
