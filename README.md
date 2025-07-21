@@ -43,12 +43,13 @@ This marks the **Manual QA Insurance Project** completion.
 ---
 
 ## 📬 Contact 
+[GitHub: Ananta-Tyagi-Qapro](https://github.com/Ananta-Tyagi-Qapro)
 
 ## 👤 Author
 
 **Ananta Tyagi**  
 QA Engineer | Manual + Automation | 4 Years Experience  
-[GitHub: Ananta-Tyagi-Qapro](https://github.com/Ananta-Tyagi-Qapro)
+
 
 
 
