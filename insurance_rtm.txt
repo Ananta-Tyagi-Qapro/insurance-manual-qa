@@ -1,0 +1,13 @@
+Requirements Traceability Matrix – Insurance Management System
+
+| Requirement ID | Requirement Description                        | Test Case ID(s)       |
+|----------------|------------------------------------------------|------------------------|
+| REQ-001        | User should be able to register and login      | UP_TC_01, UP_TC_02     |
+| REQ-002        | User can view, buy, and download policies      | UP_TC_03, UP_TC_04     |
+| REQ-003        | Admin can manage user and policy records       | AP_TC_01 to AP_TC_03   |
+| REQ-004        | Admin dashboard shows analytics and logs       | AP_TC_04, AP_TC_05     |
+| REQ-005        | Integration with payment gateway               | TP_TC_01, TP_TC_02     |
+| REQ-006        | External claim status retrieval via API        | TP_TC_03, TP_TC_04     |
+| REQ-007        | Policy updates sync with third-party systems   | TP_TC_05               |
+| REQ-008        | Secure data communication over third-party API | TP_TC_06               |
+| REQ-009        | Handle unexpected third-party errors gracefully| TP_TC_07               |
